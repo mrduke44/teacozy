@@ -10,6 +10,10 @@ body{
   text-align: center;
 }
 
+h2, h5{
+  margin: 15px;
+}
+
 a {
   color: seashell;
 }
@@ -88,7 +92,7 @@ nav span{
 }
 
 .tea span {
-  padding-top: 10px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -100,18 +104,26 @@ nav span{
   margin-top: 50px;
 }
 
-#addresses{
-  justify-content: space-around;
+#addresses.flex-box{
+  margin:auto;
 }
 
 .address {
   width: 300px;
   height:auto;
   background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
 }
 
 #contact {
   height: 200px;
+}
+
+#contact.flex-box {
+    flex-direction: column;
 }
 
 /* Footer Styles */
